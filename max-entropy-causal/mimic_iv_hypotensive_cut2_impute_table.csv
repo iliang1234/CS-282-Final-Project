@@ -1,0 +1,15 @@
+feature,impute_value
+creatinine,1.0
+fraction_inspired_oxygen,0.21
+lactate,1.8
+urine_output,80.0
+alanine_aminotransferase,34.0
+asparate_aminotransferase,40.0
+mean_blood_pressure,77.0
+diastolic_blood_pressure,59.0
+systolic_blood_pressure,118.0
+gcs,11.0
+partial_pressure_of_oxygen,112.0
+heart_rate,86.0
+temperature,37.0
+respiratory_rate,19.0
