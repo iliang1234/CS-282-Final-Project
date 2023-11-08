@@ -3,11 +3,11 @@ goal: interpretable visual framework for IRL models
 
 # Data cleaning
 Explanation of pipeline: 
-1. First, we are only looking at ICD 9 codes in the non-ICU (hospital) setting, since they are more broad (more data to work with). Within that scope, we are only looking at patients with pneunomia (ICD9: 486) and hyperxemia (ICD9: 79902), two of the more frequently diagnosed diseases that would require immediate treatment.
+1. (playground.ipynb) First, we are only looking at ICD 9 codes in the non-ICU (hospital) setting, since they are more broad (more data to work with). Within that scope, we are only looking at patients with pneunomia (ICD9: 486) and hyperxemia (ICD9: 79902), two of the more frequently diagnosed diseases that would require immediate treatment.
 
 2. After extracting the patients with only the diseases of interest, we merged the subject id, ICD code, and ICD English description with the lab events corresponding to each patient. In addition, we added an additional column that reflects the age of each patient to create a masterlist of all the information we need to know.
 
-2. Case 1: Pneumonia --> Finding the "action" for each pneumonia patient
+3. Case 1: Pneumonia --> Finding the "action" for each pneumonia patient
 
 Preproc_mapping.py: downloads emars table to map (subject_id, admission_id) —> list of drugs/treatments given to patient
 - The mapping is stored in treatments.json (todo: rename the file to a more descriptive title)
