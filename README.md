@@ -1,8 +1,10 @@
 # CS-282-Final-Project
 goal: interpretable visual framework for IRL models
 
-# Data cleaning
-Explanation of pipeline: 
+## Directory Break-down
+### /AIRL 
+Attempt at implement AIRL (in progress)
+### /data_pipeline
 1. (playground.ipynb) First, we are only looking at ICD 9 codes in the non-ICU (hospital) setting, since they are more broad (more data to work with). Within that scope, we are only looking at patients with pneunomia (ICD9: 486) and hyperxemia (ICD9: 79902), two of the more frequently diagnosed diseases that would require immediate treatment.
 
 2. After extracting the patients with only the diseases of interest, we merged the subject id, ICD code, and ICD English description with the lab events corresponding to each patient. In addition, we added an additional column that reflects the age of each patient to create a masterlist of all the information we need to know.
@@ -16,7 +18,15 @@ Explanation of pipeline:
 
 (pneumonia_cut.py) Supposed to append an action to each patient’s row in data frame and export final data frame
 
-# Questions (11/8): 
+### /max-entropy
+Compilation of extracted reward / gradient values and code for optimizer, trajectory construction etc.
+### /output visualizations
+Code for generating more interpretable visualizations for IRL model output and feature comparison
+### /reward landscape
+Adjusted code to create multi-dimensional plots that explain how reward values grow during the training process
+* Paper citation: Hao Li, Zheng Xu, Gavin Taylor, Christoph Studer and Tom Goldstein. Visualizing the Loss Landscape of Neural Nets. NIPS, 2018.
+
+# Understanding MIMIC questions (11/8): 
 - Hospital vs ICU data?
 - Admission_id vs stay_id (hw3)?
 - How should we consider time?
