@@ -20,17 +20,17 @@ Attempt at implement AIRL (in progress)
 
 ### /max-entropy
 Compilation of extracted reward / gradient values and code for optimizer, trajectory construction etc.
+
 ### /output visualizations
 Code for generating more interpretable visualizations for IRL model output and feature comparison
+
 ### /reward landscape
-Adjusted code to create multi-dimensional plots that explain how reward values grow during the training process
+(BC_loss_landscape.ipynb) Adjusted code to create multi-dimensional plots that explain how reward values grow during the training process
 * Paper citation: Hao Li, Zheng Xu, Gavin Taylor, Christoph Studer and Tom Goldstein. Visualizing the Loss Landscape of Neural Nets. NIPS, 2018.
 
-# Understanding MIMIC questions (11/8): 
-- Hospital vs ICU data?
-- Admission_id vs stay_id (hw3)?
-- How should we consider time?
-- How are "trajectories" created and how do we go about constructing them? 
-- What is a good diagnoses (other than hypotension) shoudl we look at? We are guessing that pneumonia and hypoxemia have meaningful sets of treatments but we could be wrong.
-
+### /reward extraction
+()
+()
+(CS282_Final_Project_Pneumonia_Viz.ipynb) IRL-WIT for pneumonia cohort
+(CS282_Final_Project_MIMIC_IV_viz.ipynb) IRL-WIT for hypotension cohort
 
